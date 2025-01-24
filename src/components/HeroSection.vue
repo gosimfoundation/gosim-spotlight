@@ -11,7 +11,7 @@
         <div class="flex lg:hidden">
           <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400" @click="mobileMenuOpen = true">
             <span class="sr-only">Open main menu</span>
-            <Bars3Icon class="size-6" aria-hidden="true" />
+            <Bars3Icon class="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
@@ -25,7 +25,7 @@
         <div class="fixed inset-0 z-50" />
         <DialogPanel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
           <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
+            <a href="#" class="-m-1.5 p-1.5" @click="mobileMenuOpen = false">
               <span class="sr-only">GOSIM</span>
               <img class="h-8 w-auto" src="@/assets/gosim-logo.png" alt="" />
             </a>
@@ -37,10 +37,24 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/25">
               <div class="space-y-2 py-6">
-                <a v-for="item in navigation" :key="item.name" :href="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">{{ item.name }}</a>
+                <a
+                  v-for="item in navigation"
+                  :key="item.name"
+                  :href="item.href"
+                  @click="mobileMenuOpen = false"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800"
+                >
+                  {{ item.name }}
+                </a>
               </div>
               <div class="py-6">
-                <a href="#nominate" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-800">Nominate Project</a>
+                <a
+                  href="#nominate"
+                  @click="mobileMenuOpen = false"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-800"
+                >
+                  Nominate Project
+                </a>
               </div>
             </div>
           </div>
@@ -57,7 +71,11 @@
         <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div class="hidden sm:mb-8 sm:flex sm:justify-center">
             <div class="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-              Winner showcase at RustWeek 2025 <a href="#nominate" class="font-semibold text-white"><span class="absolute inset-0" aria-hidden="true" />Nominate Project <span aria-hidden="true">&rarr;</span></a>
+              Winner showcase at RustWeek 2025
+              <a href="#nominate" class="font-semibold text-white" @click="mobileMenuOpen = false">
+                <span class="absolute inset-0" aria-hidden="true" />
+                Nominate Project <span aria-hidden="true">&rarr;</span>
+              </a>
             </div>
           </div>
           <div class="text-center">
@@ -66,8 +84,8 @@
             <h1 class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">Open-Source Projects</h1>
             <p class="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">A program dedicated to celebrating the brilliance and creativity of open-source projects developed with Rust programming language</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a href="#nominate" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Nominate Project</a>
-              <a href="#program" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
+              <a href="#nominate" @click="mobileMenuOpen = false" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Nominate Project</a>
+              <a href="#program" @click="mobileMenuOpen = false" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
