@@ -19,30 +19,36 @@
             </dl>
           </div>
         </div>
-        <img src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />
+        <img
+          src="@/assets/spotlight-bg.png"
+          alt="Product screenshot"
+          class="mx-auto w-full max-w-[48rem] rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+          width="2432"
+          height="1442"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid'
+import { UserCircleIcon, BoltIcon, UserGroupIcon } from '@heroicons/vue/20/solid'
 
 const features = [
   {
     name: 'Eligibility',
     description: 'Projects must be open-source and hosted on GitHub, with Rust as the primary programming language.',
-    icon: CloudArrowUpIcon,
+    icon: UserCircleIcon,
   },
   {
     name: 'Activity',
     description: 'Projects should demonstrate active development or significant contributions within the last 12 months.',
-    icon: LockClosedIcon,
+    icon: BoltIcon,
   },
   {
     name: 'Community Values',
     description: "Nominated projects must align with Rust's core values of safety, concurrency, and inclusivity.",
-    icon: ServerIcon,
+    icon: UserGroupIcon,
   },
 ]
 </script>

@@ -24,23 +24,23 @@
 </template>
 
 <script setup>
-import { CloudArrowUpIcon, LockClosedIcon, ArrowPathIcon } from '@heroicons/vue/20/solid'
+import { MegaphoneIcon, ViewfinderCircleIcon, ShieldCheckIcon } from '@heroicons/vue/20/solid'
 
 const features = [
   {
     name: 'Nomination',
     description: 'Anyone can nominate a project, including the developers themselves. Projects should be hosted on GitHub and written in Rust.',
-    icon: CloudArrowUpIcon,
+    icon: MegaphoneIcon,
   },
   {
     name: 'Evaluation',
     description: 'Our panel of experts reviews the nominations, focusing on innovation, utility, and community impact.',
-    icon: LockClosedIcon,
+    icon: ViewfinderCircleIcon,
   },
   {
     name: 'Selection',
     description: 'Selected projects are featured on our website, newsletter, and social media channels, ensuring they reach a global audience.',
-    icon: ArrowPathIcon,
+    icon: ShieldCheckIcon,
   },
 ]
 </script>
