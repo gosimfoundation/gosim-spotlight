@@ -8,7 +8,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: '/gosim-tailwind/',
+  base: '/gosim-spotlight/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
