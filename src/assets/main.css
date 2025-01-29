@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,5 +13,6 @@
 @layer base {
     html {
         scroll-behavior: smooth;
+        font-family: Manrope, system-ui, sans-serif;
     }
 }

@@ -13,24 +13,9 @@
       </div>
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
-          <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div class="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-              Winner showcase at RustWeek 2025
-              <a href="#nominate" class="font-semibold text-white" @click="mobileMenuOpen = false">
-                <span class="absolute inset-0" aria-hidden="true" />
-                Nominate Project <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-          </div>
           <div class="text-center">
-            <h1 class="text-balance text-5xl tracking-tight text-white sm:text-7xl">GOSIM Spotlight:</h1>
-            <h1 class="text-balance text-5xl tracking-tight text-white sm:text-7xl">Exceptional Rust</h1>
-            <h1 class="text-balance text-5xl tracking-tight text-white sm:text-7xl">Open-Source Projects</h1>
-            <p class="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">A program dedicated to celebrating the brilliance and creativity of open-source projects developed with Rust programming language</p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a href="#nominate" @click="mobileMenuOpen = false" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Nominate Project</a>
-              <a href="#program" @click="mobileMenuOpen = false" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
-            </div>
+            <h1 class="text-balance text-5xl tracking-tight text-white sm:text-7xl">Rules & Eligibility</h1>
+            <p class="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus congue velit in volutpat pulvinar. Integer vulputate libero ut est faucibus, sed maximus risus tempus.</p>
           </div>
         </div>
       </div>

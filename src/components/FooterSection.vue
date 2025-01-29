@@ -7,7 +7,7 @@
           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
         </a>
       </div>
-      <p class="mt-8 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">&copy; 2024 GOSIM. All rights reserved.</p>
+      <p class="mt-8 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">&copy; 2025 GOSIM. All rights reserved.</p>
     </div>
   </footer>
 </template>
