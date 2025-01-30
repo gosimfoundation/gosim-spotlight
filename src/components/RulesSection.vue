@@ -6,7 +6,7 @@
           <div class="lg:max-w-lg">
             <h2 class="text-base/7 font-semibold text-indigo-400">Guidelines</h2>
             <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Rules & Eligibility</p>
-            <p class="mt-6 text-lg/8 text-gray-300">To ensure fairness and inclusivity, GOSIM Spotlight follows these guidelines:</p>
+            <p class="mt-6 text-lg/8 text-gray-300">To ensure fairness and inclusivity, GOSIM Rust Spotlight follows these guidelines:</p>
             <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-300 lg:max-w-none">
               <div v-for="feature in features" :key="feature.name" class="relative pl-9">
                 <dt class="inline font-semibold text-white">

@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="text-center">
-            <h1 class="text-balance text-5xl tracking-tight text-white sm:text-7xl">GOSIM Spotlight:</h1>
+            <h1 class="text-balance text-5xl tracking-tight text-white sm:text-7xl">GOSIM Rust Spotlight:</h1>
             <h1 class="text-balance text-5xl tracking-tight text-white sm:text-7xl">Exceptional Rust</h1>
             <h1 class="text-balance text-5xl tracking-tight text-white sm:text-7xl">Open-Source Projects</h1>
             <p class="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">A program dedicated to celebrating the brilliance and creativity of open-source projects developed with Rust programming language</p>

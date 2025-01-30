@@ -4,7 +4,7 @@
       <div class="mx-auto max-w-2xl lg:text-center">
         <h2 class="text-base/7 font-semibold text-indigo-400">How It Works</h2>
         <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-balance">Participating in GOSIM<br/>Spotlight is simple</p>
-        <p class="mt-6 text-lg/8 text-gray-300">Each year, GOSIM Spotlight will shine on a handful of incredible projects, giving them the attention they deserve. Nominees will be judged by an independent judging panel made up of industry experts.</p>
+        <p class="mt-6 text-lg/8 text-gray-300">Each year, GOSIM Rust Spotlight will shine on a handful of incredible projects, giving them the attention they deserve. Nominees will be judged by an independent judging panel made up of industry experts.</p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
         <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
