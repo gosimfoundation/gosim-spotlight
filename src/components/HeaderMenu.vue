@@ -8,7 +8,12 @@
         </a>
       </div>
       <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400" @click="mobileMenuOpen = true">
+        <button
+          type="button"
+          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
+          :class="darkFont ? 'text-gray-900' : 'text-gray-400'"
+          @click="mobileMenuOpen = true"
+        >
           <span class="sr-only">Open main menu</span>
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
@@ -18,12 +23,17 @@
           v-for="item in navigation"
           :key="item.name"
           :href="item.href"
-          class="text-sm/6 font-semibold text-white"
+          class="text-sm/6 font-semibold"
+          :class="darkFont ? 'text-gray-900' : 'text-white'"
           @click="scrollToSection($event, item.href)"
         >{{ item.name }}</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <RouterLink to="/nominate" class="text-sm/6 font-semibold text-white">
+        <RouterLink
+          to="/nominate"
+          class="text-sm/6 font-semibold"
+          :class="darkFont ? 'text-gray-900' : 'text-white'"
+        >
           Nominate Project <span aria-hidden="true">&rarr;</span>
         </RouterLink>
       </div>
@@ -75,6 +85,13 @@ import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+
+defineProps({
+  darkFont: {
+    type: Boolean,
+    default: false
+  }
+})
 
 const navigation = [
   { name: 'The Program', href: '#program' },
