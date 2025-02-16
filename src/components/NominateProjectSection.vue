@@ -21,11 +21,11 @@
               <p class="text-5xl text-white font-bold">Nominate Your Project</p>
               <p class="mt-4 text-white font-semibold text-xl">This year, 10+ winning projects will be selected and
                 showcased at RustWeek 2025 event in Utrecht, Netherlands.</p>
-              <div class="pt-6 flex items-center  justify-end gap-2">
+              <!-- <div class="pt-6 flex items-center  justify-end gap-2">
                 <a href="https://cfp.gosim.org" @click="mobileMenuOpen = false"
                   class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                   target="_blank">Nominate Project</a>
-              </div>
+              </div> -->
             </figure>
           </div>
         </div>
@@ -45,11 +45,16 @@
               <dt class="flex-auto text-base/7 font-semibold text-gray-900">{{ requirement }}</dt>
             </div>
           </dl>
-          <div class="mt-10 flex">
+          <div class="pt-6 flex items-center gap-2">
+            <a href="https://cfp.gosim.org" @click="mobileMenuOpen = false"
+              class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+              target="_blank">Nominate Project</a>
+          </div>
+          <!-- <div class="mt-10 flex">
             <a href="/judging" class="text-base/7 font-semibold text-indigo-600">
               Learn more about the judging process. <span aria-hidden="true">→</span>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
