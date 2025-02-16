@@ -3,12 +3,12 @@
     <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
       <div class="max-w-4xl">
         <p class="text-base/7 font-semibold text-indigo-600">Introduction</p>
-        <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Welcome to GOSIM Rust Spotlight!</h1>
+        <h1 class="mt-2 text-pretty text-4xl font-semibold text-gray-900 sm:text-5xl">Welcome to GOSIM Rust Spotlight!</h1>
         <p class="mt-6 text-balance text-xl/8 text-gray-700">Welcome to GOSIM Rust Spotlight, the program dedicated to celebrating the brilliance and creativity of open-source projects developed with the Rust programming language. At GOSIM, we believe in empowering innovators and amplifying the voices of up-and-coming developers and under-represented projects. With the GOSIM Rust Spotlight program, we aim to put these projects in the spotlight they deserve. Are you ready to discover the future of Rust development?</p>
       </div>
       <section class="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
         <div class="lg:pr-8">
-          <h2 class="text-pretty text-2xl font-semibold tracking-tight text-gray-900">The Program</h2>
+          <h2 class="text-pretty text-2xl font-semibold text-gray-900">The Program</h2>
           <p class="mt-6 text-base/7 text-gray-600">GOSIM Rust Spotlight is designed to:</p>
           <div class="mt-8 space-y-6 text-base/7 text-gray-600">
             <div class="flex items-start gap-3">

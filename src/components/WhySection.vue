@@ -4,7 +4,7 @@
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">
         <div class="col-span-2">
           <h2 class="text-base/7 font-semibold text-indigo-600">Everything you need</h2>
-          <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Why Participate</p>
+          <p class="mt-2 text-pretty text-4xl font-semibold text-gray-900 sm:text-5xl">Why Participate</p>
           <p class="mt-6 text-base/7 text-gray-600">Winners will be featured at RustWeek 2025 conference and on GOSIM websites, ensuring maximum exposure to the global Rust community.</p>
         </div>
         <dl class="col-span-3 grid grid-cols-1 gap-x-8 gap-y-10 text-base/7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">

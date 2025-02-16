@@ -14,7 +14,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div class="text-center">
-            <h1 class="text-balance text-5xl tracking-tight text-white sm:text-7xl">Spotlight Details</h1>
+            <h1 class="text-balance text-5xl text-white sm:text-7xl">Spotlight Details</h1>
             <p class="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus congue velit in volutpat pulvinar. Integer vulputate libero ut est faucibus, sed maximus risus tempus.</p>
           </div>
         </div>
