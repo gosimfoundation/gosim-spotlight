@@ -1,13 +1,23 @@
+<!-- public/404.html -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=/" />
-    <script>
-      // Redirect to the root index.html file
-      window.location.href = "/";
-    </script>
-  </head>
-  <body>
-    <p>If you are not redirected automatically, follow this <a href="/">link</a>.</p>
-  </body>
+
+<head>
+  <script>
+    sessionStorage.redirect = location.href;
+  </script>
+  <meta http-equiv="refresh" content="0;URL='/'">
+</head>
+
 </html>
+
+<!-- Add to your index.html -->
+<script>
+  (function () {
+    let redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
