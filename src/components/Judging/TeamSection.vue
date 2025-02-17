@@ -2,7 +2,7 @@
   <div class="bg-white py-24 md:py-32">
     <div class="mx-auto grid max-w-7xl grid-cols-1 gap-20 px-6 lg:px-8 xl:grid-cols-5">
       <div class="max-w-2xl xl:col-span-2">
-        <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">About the team</h2>
+        <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">About the Judges</h2>
         <p class="mt-6 text-lg/8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
       </div>
       <ul role="list" class="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">

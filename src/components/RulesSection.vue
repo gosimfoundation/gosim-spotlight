@@ -37,7 +37,7 @@ import { UserCircleIcon, BoltIcon, UserGroupIcon } from '@heroicons/vue/20/solid
 const features = [
   {
     name: 'Eligibility',
-    description: 'Projects must be open-source and hosted on GitHub, with Rust as the primary programming language.',
+    description: 'Projects must be open-source and hosted on a public Git server, with Rust as the primary programming language.',
     icon: UserCircleIcon,
   },
   {

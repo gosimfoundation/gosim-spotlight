@@ -10,8 +10,8 @@ import CTASection from "@/components/CTASection.vue";
   <main>
     <JudgingHeroSection />
     <JudgingContentSection />
-    <JudgingTeamSection />
-    <CTASection />
+    <!-- <JudgingTeamSection />
+    <CTASection /> -->
     <FooterSection />
   </main>
 </template>
