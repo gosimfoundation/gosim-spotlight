@@ -8,7 +8,7 @@
     </div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
-        <p class="text-base/7 font-semibold text-indigo-600">Deploy faster</p>
+        <p class="text-base/7 font-semibold text-indigo-600">Recognizing Innovation, Impact, and Excellence</p>
         <h1 class="mt-2 text-pretty text-4xl font-semibold text-gray-900 sm:text-5xl">Selection Process
         </h1>
         <p class="mt-6 text-xl/8 text-gray-700">
@@ -55,21 +55,21 @@
           </p>
           <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
             <li class="flex gap-x-3">
-              <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+              <SparklesIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
               <span><strong class="font-semibold text-gray-900">Innovation:</strong>
                 We look for projects that introduce fresh ideas, unique solutions, or creative advancements in their
                 respective fields. Whether through groundbreaking technology, novel design approaches, or transformative
                 user experiences, we prioritize initiatives that push boundaries and inspire progress.</span>
             </li>
             <li class="flex gap-x-3">
-              <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+              <WrenchIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
               <span><strong class="font-semibold text-gray-900">Utility:</strong>
                 A project’s practicality and effectiveness are crucial factors in our evaluation. We analyze how well
                 it addresses real-world challenges, enhances efficiency, or provides tangible benefits to its users. The
                 more impactful and functional a project is, the higher it ranks in our selection process.</span>
             </li>
             <li class="flex gap-x-3">
-              <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+              <UserGroupIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
               <span><strong class="font-semibold text-gray-900">Community Impact:</strong>
                 Beyond technical excellence, we value projects that foster positive change within their
                 communities. Whether through social good, environmental sustainability, education, or accessibility, we
@@ -77,7 +77,8 @@
               </span>
             </li>
             <p>Each nomination undergoes a rigorous assessment, ensuring that only the most deserving projects are
-              highlighted. Our goal is to celebrate and amplify initiatives that not only demonstrate excellence but also
+              highlighted. Our goal is to celebrate and amplify initiatives that not only demonstrate excellence but
+              also
               contribute to a better future.</p>
           </ul>
         </div>
@@ -95,41 +96,18 @@
           </ul>
           <p class="mt-6 text-lg">
             A secondary review round where the judges will collectively discuss the merits of each project</p>
-          <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-            <li class="flex gap-x-3">
-              <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span><strong class="font-semibold text-gray-900"></strong>During this round proposals
-                will be eliminated by consent</span>
-            </li>
-            <li class="flex gap-x-3">
-              <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span><strong class="font-semibold text-gray-900"></strong>Judges will go around taking
-                turns sharing proposals for removal with supportive reasoning, and if
-                there are no objections that proposal will be removed from consideration</span>
-            </li>
-            <li class="flex gap-x-3">
-              <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span><strong class="font-semibold text-gray-900"></strong>This process will repeat until
-                there are only 10 + 2 (10 primary and 2 backup) proposals are selected</span>
-            </li>
-            <li class="flex gap-x-3">
-              <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span><strong class="font-semibold text-gray-900"></strong>Judges will only resort to majority voting
-                to remove proposals from consideration if they cannot reach unanimous consent within a reasonable time
-                frame.</span>
-            </li>
-            <li class="flex gap-x-3">
-              <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span><strong class="font-semibold text-gray-900"></strong>Judges will each have one wildcard proposal
-                that they can bring in for consideration from the first round regardless of its rating.</span>
-            </li>
-            <li class="flex gap-x-3">
-              <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span><strong class="font-semibold text-gray-900"></strong>These wildcard proposals will not receive
-                special consideration in the second round of the selection process, but it will give judges an
-                opportunity to advocate for projects that they feel the other judges under-appreciated.</span>
-            </li>
-          </ul>
+          <div class="mt-10 max-w-3xl">
+            <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
+              <p v-for="criterion in criteria" :key="criterion.item" class="flex gap-x-3">
+                <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                <span><strong class="font-semibold text-gray-900"></strong>{{ criterion.item }}</span>
+              </p>
+              <RouterLink to="/rules" class="flex justify-end text-sm/6 font-semibold"
+                :class="darkFont ? 'text-white' : 'text-gray-900'" target="_blank">
+                See the Rules <span aria-hidden="true">&rarr;</span>
+              </RouterLink>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -137,5 +115,14 @@
 </template>
 
 <script setup>
-import { ScaleIcon } from '@heroicons/vue/20/solid'
+import { SparklesIcon, ScaleIcon, UserGroupIcon, WrenchIcon } from '@heroicons/vue/20/solid'
+
+const criteria = [
+  { item: 'During this round proposals will be eliminated by consent' },
+  { item: 'Judges will go around taking turns sharing proposals for removal with supportive reasoning, and if there are no objections that proposal will be removed from consideration' },
+  { item: 'This process will repeat until there are only 10 + 2 (10 primary and 2 backup) proposals are selected' },
+  { item: 'Judges will only resort to majority voting to remove proposals from consideration if they cannot reach unanimous consent within a reasonable time frame.' },
+  { item: 'Judges will each have one wildcard proposal that they can bring in for consideration from the first round regardless of its rating.' },
+  { item: 'These wildcard proposals will not receive special consideration in the second round of the selection process, but it will give judges an opportunity to advocate for projects that they feel the other judges under-appreciated.' }
+]
 </script>

@@ -9,7 +9,7 @@ import CTASection from "@/components/CTASection.vue";
   <main>
     <RulesHeroSection />
     <RulesContentSection />
-    <CTASection />
+    <!-- <CTASection /> -->
     <FooterSection />
   </main>
 </template>
