@@ -91,7 +91,7 @@
             <li class="flex gap-x-3">
               <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
               <span><strong class="font-semibold text-gray-900"></strong>
-                The top 20 or so rated projects will be selected for the secondary synchronous review pass</span>
+                The top 10 rated projects will be selected for the secondary synchronous review pass</span>
             </li>
           </ul>
           <p class="mt-6 text-lg">
