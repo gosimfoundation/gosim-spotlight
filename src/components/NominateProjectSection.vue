@@ -67,6 +67,6 @@ import { ClockIcon } from '@heroicons/vue/20/solid'
 const requirements = [
   'Nomination period ends: Saturday, March 8 at 12:00 AM PST(UTC - 8) / Saturday, March 8 at 09:00 AM Europe(UTC + 1)',
   'Winning candidates announced: March 14, 2025',
-  'GOSIM Spotlight Awards Ceremony: May 15, 2025 at RustWeek in Utrect, the Netherelands'
+  'GOSIM Spotlight Talks: May 13, 2025 at RustWeek in Utrecht, the Netherelands'
 ]
 </script>
