@@ -29,14 +29,14 @@
         >{{ item.name }}</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <RouterLink
+        <a
           href="https://cfp.gosim.org"
           class="text-sm/6 font-semibold"
           :class="darkFont ? 'text-gray-900' : 'text-white'"
           target="_blank"
         >
           Nominate Project <span aria-hidden="true">&rarr;</span>
-        </RouterLink>
+        </a>
       </div>
     </nav>
     <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">

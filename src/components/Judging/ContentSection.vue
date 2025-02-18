@@ -115,6 +115,7 @@
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router'
 import { SparklesIcon, ScaleIcon, UserGroupIcon, WrenchIcon } from '@heroicons/vue/20/solid'
 
 const criteria = [
