@@ -6,11 +6,13 @@
           <div class="lg:max-w-lg">
             <h2 class="text-base/7 font-semibold text-indigo-400">Guidelines</h2>
             <p class="mt-2 text-pretty text-4xl font-semibold text-white sm:text-5xl">Rules & Eligibility</p>
-            <p class="mt-6 text-lg/8 text-gray-300">To ensure fairness and inclusivity, GOSIM Rust Spotlight follows these guidelines:</p>
+            <p class="mt-6 text-lg/8 text-gray-300">To ensure fairness and inclusivity, GOSIM Rust Spotlight follows
+              these guidelines:</p>
             <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-300 lg:max-w-none">
               <div v-for="feature in features" :key="feature.name" class="relative pl-9">
                 <dt class="inline font-semibold text-white">
-                  <component :is="feature.icon" class="absolute left-1 top-1 h-4 w-4 text-indigo-400" aria-hidden="true" />
+                  <component :is="feature.icon" class="absolute left-1 top-1 h-4 w-4 text-indigo-400"
+                    aria-hidden="true" />
                   {{ feature.name }}
                 </dt>
                 {{ ' ' }}
@@ -18,14 +20,13 @@
               </div>
             </dl>
           </div>
+          <a href="/#judging" @click="mobileMenuOpen = false"
+            class="flex justify-end mt-10 text-md/6 font-bold text-white">Learn more about rules
+            <span aria-hidden="true">→</span></a>
         </div>
-        <img
-          src="@/assets/spotlight-bg.png"
-          alt="Product screenshot"
+        <img src="@/assets/spotlight-bg.png" alt="Product screenshot"
           class="mx-auto w-full max-w-[48rem] rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-          width="2432"
-          height="1442"
-        />
+          width="2432" height="1442" />
       </div>
     </div>
   </div>

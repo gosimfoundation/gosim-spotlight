@@ -3,9 +3,8 @@
   <div id="hero" class="bg-gray-900">
 
     <div class="relative isolate overflow-hidden pt-14">
-      <img
-        src="@/assets/bg-utrecht-1.jpg"
-        alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-center" />
+      <img src="@/assets/bg-utrecht-1.jpg" alt=""
+        class="absolute inset-0 -z-10 h-full w-full object-cover object-center" />
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true">
         <div
@@ -18,10 +17,8 @@
             <div
               class="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
               Winner showcase at RustWeek 2025
-              <a href="#nominate" class="font-semibold text-white" @click="mobileMenuOpen = false">
-                <span class="absolute inset-0" aria-hidden="true" />
-                Nominate Project <span aria-hidden="true">&rarr;</span>
-              </a>
+              <a class="font-semibold text-white"
+                @click="scrollToSection($event, '#nominate')">'Nominate Project</a>
             </div>
           </div>
           <div class="text-center">
@@ -54,6 +51,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
 import HeaderMenu from "@/components/HeaderMenu.vue";
 
 const navigation = [
@@ -64,4 +62,16 @@ const navigation = [
 ]
 
 const mobileMenuOpen = ref(false)
+
+const scrollToSection = (event, href) => {
+  event.preventDefault()
+  const element = document.querySelector(href)
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+    window.history.pushState({}, '', href)
+  }
+}
 </script>
