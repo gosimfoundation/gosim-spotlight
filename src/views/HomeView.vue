@@ -13,8 +13,8 @@ import FooterSection from "@/components/FooterSection.vue";
   <main>
     <HeroSection />
     <WelcomeSection />
-    <WhySection />
     <HowItWorksSection />
+    <WhySection />
     <RulesSection />
     <NominateProjectSection />
     <NewsletterSection />

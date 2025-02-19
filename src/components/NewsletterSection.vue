@@ -1,7 +1,7 @@
 <template>
   <div id="newsletter" class="bg-white py-16 sm:py-24">
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
+      <div class="relative isolate overflow-hidden bg-gray-800 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
         <h2 class="mx-auto max-w-3xl text-center text-4xl font-semibold text-white sm:text-5xl">Join the community</h2>
         <p class="mx-auto mt-6 max-w-lg text-center text-lg text-gray-300">Stay connected with GOSIM Rust Spotlight and Rust community by subscribing to our newsletter and following us on social media.</p>
         <!-- <form class="mx-auto mt-10 flex max-w-md gap-x-4">
