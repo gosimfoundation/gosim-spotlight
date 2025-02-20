@@ -15,10 +15,10 @@
         <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div class="hidden sm:mb-8 sm:flex sm:justify-center">
             <div
-              class="relative rounded-full px-3 py-1 text-sm/6 text-gray-200 ring-1 ring-white/10 hover:ring-white/20">
+              class="relative rounded-full px-3 py-1 text-2xl/6 text-gray-200 ring-1 ring-white/10 hover:ring-white/20">
               Winner showcase at RustWeek 2025
               <a class="font-semibold text-white"
-                @click="scrollToSection($event, '#nominate')">'Nominate Project</a>
+                @click="scrollToSection($event, '#nominate')"> • Nominate Project</a>
             </div>
           </div>
           <div class="text-center">
