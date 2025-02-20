@@ -7,6 +7,18 @@ import RulesSection from "@/components/RulesSection.vue";
 import NominateProjectSection from "@/components/NominateProjectSection.vue";
 import NewsletterSection from "@/components/NewsletterSection.vue";
 import FooterSection from "@/components/FooterSection.vue";
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  if (window.location.hash) {
+    const element = document.querySelector(window.location.hash)
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }, 100)
+    }
+  }
+})
 </script>
 
 <template>
