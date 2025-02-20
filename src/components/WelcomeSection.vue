@@ -4,7 +4,7 @@
       <div class="max-w-4xl">
         <p class="text-base/7 font-semibold text-indigo-600">Introduction</p>
         <h1 class="mt-2 text-pretty text-4xl font-semibold text-gray-900 sm:text-5xl">Welcome to GOSIM Rust Spotlight!</h1>
-        <p class="mt-6 text-balance text-xl/8 text-gray-700">Welcome to GOSIM Rust Spotlight, the program dedicated to celebrating the brilliance and creativity of open-source projects developed with the Rust programming language. At GOSIM, we believe in empowering innovators and amplifying the voices of up-and-coming developers and under-represented projects. With the GOSIM Rust Spotlight program, we aim to put these projects in the spotlight they deserve. Are you ready to discover the future of Rust development?</p>
+        <p class="mt-6 text-balance text-xl/8 text-gray-700">Are you building something revolutionary with Rust? GOSIM Rust Spotlight is your launchpad to the world! This program offers early-stage, global Rust projects a unique opportunity to shine at RustWeek 2025 – Europe’s premier Rust community conference and workshop, taking place from May 13–17, 2025 in the enchanting college town of Utrecht, The Netherlands.</p>
       </div>
       <section class="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
         <div class="lg:pr-8">

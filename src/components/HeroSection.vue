@@ -32,7 +32,8 @@
               <a href="https://cfp.gosim.org" @click="mobileMenuOpen = false"
                 class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                 target="_blank">Nominate Project</a>
-              <a href="#program" @click="mobileMenuOpen = false" class="text-sm/6 font-semibold text-white">Learn more
+              <a class="text-sm/6 font-semibold text-white"
+                @click="scrollToSection($event, '#nominate')">Learn more
                 <span aria-hidden="true">→</span></a>
             </div>
           </div>
