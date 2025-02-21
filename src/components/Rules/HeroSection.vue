@@ -29,10 +29,8 @@
       </div>
     </div>
   </div>
-  <FooterSection />
 </template>
 
 <script setup>
 import InnerPageHeaderMenu from '@/components/InnerPageHeaderMenu.vue'
-import FooterSection from '@/components/FooterSection.vue'
 </script>

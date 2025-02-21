@@ -20,9 +20,9 @@
               </div>
             </dl>
           </div>
-          <a href="/rules" @click="mobileMenuOpen = false"
+          <RouterLink to="/rules" @click="mobileMenuOpen = false"
             class="flex justify-end mt-10 text-md/6 font-bold text-white">Learn more about rules
-            <span aria-hidden="true">→</span></a>
+            <span aria-hidden="true">→</span></RouterLink>
         </div>
         <img src="@/assets/spotlight-bg.png" alt="Product screenshot"
           class="mx-auto w-full max-w-[48rem] rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
@@ -33,6 +33,7 @@
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router'
 import { UserCircleIcon, BoltIcon, UserGroupIcon } from '@heroicons/vue/20/solid'
 
 const features = [

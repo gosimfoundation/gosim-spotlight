@@ -22,14 +22,15 @@
           </div>
         </dl>
       </div>
-      <a href="/judging" @click="mobileMenuOpen = false"
+      <RouterLink to="/judging" @click="mobileMenuOpen = false"
         class="flex justify-end mt-10 text-md/6 font-bold text-white">Learn more about judging
-        <span aria-hidden="true">→</span></a>
+        <span aria-hidden="true">→</span></RouterLink>
     </div>
   </div>
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router'
 import { CursorArrowRaysIcon, ViewfinderCircleIcon, ShieldCheckIcon } from '@heroicons/vue/20/solid'
 
 const features = [
