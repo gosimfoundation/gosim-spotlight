@@ -12,7 +12,7 @@
             <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
             <span><strong class="font-semibold text-gray-900"></strong>{{ rule.item }}</span>
           </p>
-          <RouterLink to="#/how-it-works" class="flex justify-end text-sm/6 font-semibold" :class="darkFont ? 'text-white' : 'text-gray-900'"
+          <RouterLink to="/#how-it-works" class="flex justify-end text-sm/6 font-semibold" :class="darkFont ? 'text-white' : 'text-gray-900'"
             target="_blank">
             Judging Process <span aria-hidden="true">&rarr;</span>
           </RouterLink>
