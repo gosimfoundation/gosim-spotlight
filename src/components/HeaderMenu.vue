@@ -35,7 +35,7 @@
           :class="darkFont ? 'text-gray-900' : 'text-white'"
           target="_blank"
         >
-          Nominate Project <span aria-hidden="true">&rarr;</span>
+          Apply Now <span aria-hidden="true">&rarr;</span>
         </a>
       </div>
     </nav>

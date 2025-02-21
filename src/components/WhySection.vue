@@ -5,18 +5,11 @@
         <div class="col-span-2">
           <h2 class="text-base/7 font-semibold text-indigo-600">Elevate your project</h2>
           <p class="mt-2 text-pretty text-4xl font-semibold text-gray-900 sm:text-5xl">Why Apply</p>
-          <div class="mt-10 max-w-3xl">
-            <!-- <p class="mt-6 text-base/7 text-gray-600"> -->
-            <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-              <li class="flex gap-x-3">
-                <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                Winners will be featured at RustWeek 2025 conference and on GOSIM websites, providing maximum exposure to the global Rust community.
-              </li>
-              <li class="flex gap-x-3">
-                <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                Travel grants available for those who are selected to present their projects at RustWeek 2025
-              </li>
-            </ul>
+          <div class="mt-8 space-y-6 text-base/7 text-gray-600">
+            <div v-for="item in items" :key="item" class="flex items-center gap-x-3">
+              <CheckCircleIcon class="h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+              <dt class="flex-auto text-base/7 font-semibold text-gray-900">{{ item.description }}</dt>
+            </div>
           </div>
         </div>
         <dl class="col-span-3 grid grid-cols-1 gap-x-8 gap-y-10 text-base/7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
@@ -29,6 +22,9 @@
           </div>
         </dl>
       </div>
+      <a class="flex justify-end mt-5 text-md/6 font-bold text-grey-900"
+        @click="scrollToSection($event, '#nominate')">What's Next
+        <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </template>
@@ -36,10 +32,26 @@
 <script setup>
 import { ArrowTrendingUpIcon, CheckBadgeIcon, CheckCircleIcon, MegaphoneIcon, UserGroupIcon } from '@heroicons/vue/20/solid'
 
+const items = [
+  {
+    description: 'Exclusive Showcase: Present your project at a dedicated demo booth, capturing the attention of Rust project leaders, developers, and enthusiasts from around the globe.',
+  },
+  {
+    description: 'Travel Grants: Win travel grants to cover your flight and hotel accommodation, ensuring you can focus on what matters – your project!',
+  },
+  {
+    description: 'Networking & Collaboration: Engage in a vibrant community setting, forge new collaborations, and connect with mentors and potential users.',
+  },
+  {
+    description: 'Mentorship & Recognition: Gain valuable insights from Rust`s top minds and secure your place in the global Rust community spotlight.',
+  },
+
+]
+
 const features = [
   {
     name: 'Visibility',
-    description: 'Reach a global audience of developers, contributors, and tech enthusiasts. Winning projects will have a chance to display their projects at the RustWeek conference infront of other Rust developers.',
+    description: 'Demo Day Experience: Compete for the chance to demo your work at Rustweek 2025, surrounded by peers and industry leaders. Reach a global audience of developers, contributors, and tech enthusiasts. ',
     icon: MegaphoneIcon,
   },
   {
@@ -49,7 +61,7 @@ const features = [
   },
   {
     name: 'Recognition',
-    description: 'Travel grants available for those who are selected to present their projects at RustWeek 2025. Display official "GOSIM Spotlight Winner" badges and icons on your project or websites.',
+    description: 'Win & Shine: Top projects not only earn travel grants but also gain access to exclusive networking opportunities and global recognition.',
     icon: CheckBadgeIcon,
   },
   {
@@ -58,4 +70,16 @@ const features = [
     icon: ArrowTrendingUpIcon,
   },
 ]
+
+const scrollToSection = (event, href) => {
+  event.preventDefault()
+  const element = document.querySelector(href)
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+    window.history.pushState({}, '', href)
+  }
+}
 </script>
