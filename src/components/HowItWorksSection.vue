@@ -22,7 +22,7 @@
           </div>
         </dl>
       </div>
-      <a href="/#judging" @click="mobileMenuOpen = false"
+      <a href="/judging" @click="mobileMenuOpen = false"
         class="flex justify-end mt-10 text-md/6 font-bold text-white">Learn more about judging
         <span aria-hidden="true">→</span></a>
     </div>
@@ -34,8 +34,8 @@ import { CursorArrowRaysIcon, ViewfinderCircleIcon, ShieldCheckIcon } from '@her
 
 const features = [
   {
-    name: 'Nomination',
-    description: 'Anyone can nominate a project, including the developers themselves. Projects should be hosted on GitHub and written in Rust.',
+    name: 'Apply or Nominate',
+    description: 'Submit Your Project: Tell us about your innovative Rust project and why it deserves to be seen by the world. Anyone can also nominate a project, including the developers themselves.',
     icon: CursorArrowRaysIcon,
   },
   {

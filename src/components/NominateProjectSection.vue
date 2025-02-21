@@ -20,7 +20,7 @@
               </svg>
               <p class="text-5xl text-white font-bold">Nominate Your Project</p>
               <p class="mt-4 text-white font-semibold text-xl">This year, 10+ winning projects will be selected and
-                showcased at RustWeek 2025 event in Utrecht, Netherlands.</p>
+                showcased at RustWeek 2025 event in Utrecht, the Netherlands.</p>
               <!-- <div class="pt-6 flex items-center  justify-end gap-2">
                 <a href="https://cfp.gosim.org" @click="mobileMenuOpen = false"
                   class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
@@ -31,12 +31,12 @@
         </div>
         <div>
           <div class="text-base/7 text-gray-700 lg:max-w-lg">
-            <p class="text-base/7 font-semibold text-indigo-600">Nominate Project</p>
+            <p class="text-base/7 font-semibold text-indigo-600">Apply and Nominate</p>
             <h1 class="mt-2 text-pretty text-4xl font-semibold text-gray-900 sm:text-5xl">Now accepting
-              nominations!</h1>
+              applications!</h1>
             <div class="max-w-xl">
               <p class="mt-6">Know a Rust project that deserves recognition? Don't wait - nominate it today and help us
-                shine a spotlight on its potential. Here are the important dates:</p>
+                shine a spotlight on its potential. Or apply with your own project. Here are the important dates:</p>
             </div>
           </div>
           <dl class="mt-10 space-y-4">
@@ -65,8 +65,8 @@
 import { ClockIcon } from '@heroicons/vue/20/solid'
 
 const requirements = [
-  'Nomination period ends: Saturday, March 8 at 12:00 AM PST(UTC - 8) / Saturday, March 8 at 09:00 AM Europe(UTC + 1)',
+  'Application period ends: Saturday, March 8 at 12:00 AM PST(UTC - 8) / Saturday, March 8 at 09:00 AM Europe(UTC + 1)',
   'Winning candidates announced: March 14, 2025',
-  'GOSIM Spotlight Talks: May 13, 2025 at RustWeek in Utrecht, the Netherelands'
+  'GOSIM Spotlight Showcase and Talks: May 13, 2025 at RustWeek in Utrecht, the Netherelands'
 ]
 </script>

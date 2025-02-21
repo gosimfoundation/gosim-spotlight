@@ -20,7 +20,7 @@
               </div>
             </dl>
           </div>
-          <a href="/#judging" @click="mobileMenuOpen = false"
+          <a href="/rules" @click="mobileMenuOpen = false"
             class="flex justify-end mt-10 text-md/6 font-bold text-white">Learn more about rules
             <span aria-hidden="true">→</span></a>
         </div>
