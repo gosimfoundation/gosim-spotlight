@@ -43,6 +43,10 @@ jobs:
       - name: Build project
         run: npm run build
 
+      # Copy index.html to 404.html
+      - name: Copy index.html to 404.html
+        run: cp ./dist/index.html ./dist/404.html
+
       # Upload artifact for deployment job
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
