@@ -3,7 +3,7 @@
   <div id="hero" class="bg-gray-600">
 
     <div class="relative isolate overflow-hidden pt-14">
-      <img src="@/assets/bg-utrecht-1.jpg" alt=""
+      <img src="@/assets/bg-paris-1.jpg" alt=""
         class="absolute inset-0 -z-10 h-full w-full object-cover object-center" />
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true">
@@ -15,18 +15,18 @@
         <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div class="hidden sm:mb-8 sm:flex sm:justify-center">
             <div
-              class="relative rounded-full px-3 py-1 text-2xl/6 text-gray-200 ring-1 ring-white/10 hover:ring-white/20">
-              Winner showcase at RustWeek 2025
+              class="relative rounded-full px-3 py-1 text-2xl/6 text-gray-200 ring-1 ring-black/10 hover:ring-black/20">
+              Winner showcase at  <a href='https://paris2025.gosim.org' class="text-indigo-600" target="_blank">GOSIM AI Paris </a>
               <a class="font-semibold text-white"
                 @click="scrollToSection($event, '#nominate')"> • Nominate Project</a>
             </div>
           </div>
           <div class="text-center">
-            <h1 class="text-balance text-5xl text-white sm:text-7xl">GOSIM Rust Spotlight:</h1>
-            <h1 class="text-balance text-5xl text-white sm:text-7xl">Exceptional Rust</h1>
+            <h1 class="text-balance text-5xl text-white sm:text-7xl">GOSIM AI Spotlight:</h1>
+            <h1 class="text-balance text-5xl text-white sm:text-7xl">Exceptional AI</h1>
             <h1 class="text-balance text-5xl text-white sm:text-7xl">Open-Source Projects</h1>
             <p class="mt-8 text-pretty text-lg font-medium text-gray-200 sm:text-xl/8">A program dedicated to
-              celebrating the brilliance and creativity of open-source projects developed with Rust programming language
+              celebrating the brilliance and creativity of open-source AI projects
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <a href="https://cfp.gosim.org" @click="mobileMenuOpen = false"
