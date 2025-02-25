@@ -34,18 +34,17 @@ import { ArrowTrendingUpIcon, CheckBadgeIcon, CheckCircleIcon, MegaphoneIcon, Us
 
 const items = [
   {
-    description: 'Exclusive Showcase: Present your project at a dedicated demo booth, capturing the attention of AI project leaders, developers, and enthusiasts from around the globe.',
+    description: 'Exclusive Showcase: Present your project at a dedicated demo table/booth, capturing the attention of AI project leaders, developers, and enthusiasts from around the globe.',
   },
   {
-    description: 'Travel Grants: Win travel grants to cover your flight and hotel accommodation, ensuring you can focus on what matters – your project!',
+    description: 'Travel Grants: Win travel grants to cover your (project owner or official reprentative) flight and hotel accommodation, ensuring you can focus on what matters – your project!',
   },
   {
-    description: 'Networking & Collaboration: Engage in a vibrant community setting, forge new collaborations, and connect with mentors and potential users.',
+    description: 'Networking & Collaboration: Engage in the vibrant Paris AI community setting, forge new collaborations, and connect with mentors and potential users.',
   },
   {
     description: 'Mentorship & Recognition: Gain valuable insights from AI`s top minds and secure your place in the global AI community spotlight.',
   },
-
 ]
 
 const features = [

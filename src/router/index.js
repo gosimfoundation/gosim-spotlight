@@ -10,7 +10,7 @@ const router = createRouter({
     // },
     {
       path: '/',
-      name: 'rust2025',
+      name: 'index',
       component: () => import('../views/HomeView.vue')
     },
     {
@@ -24,7 +24,22 @@ const router = createRouter({
       component: () => import('../views/RulesView.vue')
     },
     {
-      path: '/ai2025/',
+      path: '/rust2025',
+      name: 'rust2025',
+      component: () => import('../views/rust2025/HomeView.vue')
+    },
+    {
+      path: '/rust2025/judging',
+      name: 'rust2025judging',
+      component: () => import('../views/rust2025/JudgingView.vue')
+    },
+    {
+      path: '/rust2025/rules',
+      name: 'rust2025rules',
+      component: () => import('../views/rust2025/RulesView.vue')
+    },
+    {
+      path: '/ai2025',
       name: 'ai2025',
       component: () => import('../views/ai2025/HomeView.vue')
     },
@@ -52,7 +67,7 @@ const router = createRouter({
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       beforeEnter: (to, from, next) => {
-        console.log('No route found for path:', to.path);
+        console.log('No page found for path:', to.path);
         next('/');
       }
     }

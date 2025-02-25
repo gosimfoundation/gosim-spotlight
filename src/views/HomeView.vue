@@ -25,8 +25,8 @@ onMounted(() => {
   <main>
     <HeroSection />
     <WelcomeSection />
-    <HowItWorksSection />
     <WhySection />
+    <HowItWorksSection />
     <RulesSection />
     <NominateProjectSection />
     <NewsletterSection />

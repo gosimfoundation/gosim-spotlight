@@ -25,8 +25,7 @@
             <h1 class="text-balance text-5xl text-white sm:text-7xl">GOSIM Rust Spotlight:</h1>
             <h1 class="text-balance text-5xl text-white sm:text-7xl">Exceptional Rust</h1>
             <h1 class="text-balance text-5xl text-white sm:text-7xl">Open-Source Projects</h1>
-            <p class="mt-8 text-pretty text-lg font-medium text-gray-200 sm:text-xl/8">A program dedicated to
-              celebrating the brilliance and creativity of open-source projects developed with Rust programming language
+            <p class="mt-8 text-pretty text-lg font-medium text-gray-200 sm:text-xl/8">Finalists will receive travel grant to attend the RustWeek conference in Utrecht, The Netherlands
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <a href="https://cfp.gosim.org" @click="mobileMenuOpen = false"
