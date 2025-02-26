@@ -1,7 +1,6 @@
 <template>
   <HeaderMenu :navigation="navigation" :mobileMenuOpen="mobileMenuOpen" />
   <div id="hero" class="bg-gray-600">
-
     <div class="relative isolate overflow-hidden pt-14">
       <img src="@/assets/bg-utrecht-1.jpg" alt=""
         class="absolute inset-0 -z-10 h-full w-full object-cover object-center" />
@@ -25,7 +24,7 @@
             <h1 class="text-balance text-5xl text-white sm:text-7xl">GOSIM Rust Spotlight:</h1>
             <h1 class="text-balance text-5xl text-white sm:text-7xl">Exceptional Rust</h1>
             <h1 class="text-balance text-5xl text-white sm:text-7xl">Open-Source Projects</h1>
-            <p class="mt-8 text-pretty text-lg font-medium text-gray-200 sm:text-xl/8">Finalists will receive travel grant to attend the RustWeek conference in Utrecht, The Netherlands
+            <p class="mt-8 text-pretty text-lg font-medium text-gray-200 sm:text-xl/8">Finalists will receive travel grant attend the RustWeek conference in Utrecht, The Netherlands
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <a href="https://cfp.gosim.org" @click="mobileMenuOpen = false"
@@ -51,7 +50,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import { RouterLink } from 'vue-router'
 import HeaderMenu from "@/components/HeaderMenu.vue";
 
 const navigation = [

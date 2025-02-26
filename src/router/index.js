@@ -24,6 +24,11 @@ const router = createRouter({
       component: () => import('../views/RulesView.vue')
     },
     {
+      path: '/rust',
+      name: 'rust',
+      component: () => import('../views/rust2025/HomeView.vue')
+    },
+    {
       path: '/rust2025',
       name: 'rust2025',
       component: () => import('../views/rust2025/HomeView.vue')
@@ -37,6 +42,11 @@ const router = createRouter({
       path: '/rust2025/rules',
       name: 'rust2025rules',
       component: () => import('../views/rust2025/RulesView.vue')
+    },
+    {
+      path: '/ai',
+      name: 'ai',
+      component: () => import('../views/ai2025/HomeView.vue')
     },
     {
       path: '/ai2025',

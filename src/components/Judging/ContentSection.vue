@@ -91,7 +91,7 @@
             <li class="flex gap-x-3">
               <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
               <span><strong class="font-semibold text-gray-900"></strong>
-                The top 10 rated projects will be selected for the secondary synchronous review pass</span>
+                The top ~20 rated projects will be selected for the secondary synchronous review pass</span>
             </li>
           </ul>
           <p class="mt-6 text-lg">
@@ -102,7 +102,7 @@
                 <ScaleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                 <span><strong class="font-semibold text-gray-900"></strong>{{ criterion.item }}</span>
               </p>
-              <RouterLink to="/#rules" class="flex justify-end text-sm/6 font-semibold"
+              <RouterLink to="/rules" class="flex justify-end text-sm/6 font-semibold"
                 :class="darkFont ? 'text-white' : 'text-gray-900'" target="_blank">
                 See the Rules <span aria-hidden="true">&rarr;</span>
               </RouterLink>

@@ -9,7 +9,7 @@
             <div class="absolute inset-0 bg-gray-900 mix-blend-multiply" />
             <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
               aria-hidden="true">
-              <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#3634ff] to-[#6593ff] opacity-40"
+              <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-40"
                 style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
             </div>
             <figure class="relative isolate">
@@ -20,7 +20,7 @@
               </svg>
               <p class="text-5xl text-white font-bold">Nominate Your Project</p>
               <p class="mt-4 text-white font-semibold text-xl">This year, 10+ winning projects will be selected and
-                showcased at GOSIM AI 2025 event in Paris, France.</p>
+                showcased at RustWeek 2025 event in Utrecht, the Netherlands.</p>
               <!-- <div class="pt-6 flex items-center  justify-end gap-2">
                 <a href="https://cfp.gosim.org" @click="mobileMenuOpen = false"
                   class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
@@ -35,7 +35,7 @@
             <h1 class="mt-2 text-pretty text-4xl font-semibold text-gray-900 sm:text-5xl">Now accepting
               applications!</h1>
             <div class="max-w-xl">
-              <p class="mt-6">Know an AI project that deserves recognition? Don't wait - nominate it today and help us
+              <p class="mt-6">Know a Rust project that deserves recognition? Don't wait - nominate it today and help us
                 shine a spotlight on its potential. Or apply with your own project. Here are the important dates:</p>
             </div>
           </div>
@@ -51,7 +51,7 @@
               target="_blank">Nominate Project</a>
           </div>
           <!-- <div class="mt-10 flex">
-            <a href="/ai2025/judging" class="text-base/7 font-semibold text-indigo-600">
+            <a href="/rust2025/judging" class="text-base/7 font-semibold text-indigo-600">
               Learn more about the judging process. <span aria-hidden="true">→</span>
             </a>
           </div> -->
@@ -67,6 +67,6 @@ import { ClockIcon } from '@heroicons/vue/20/solid'
 const requirements = [
   'Application period ends: Saturday, March 8 at 12:00 AM PST(UTC - 8) / Saturday, March 8 at 09:00 AM Europe(UTC + 1)',
   'Winning candidates announced: March 14, 2025',
-  'GOSIM Spotlight Showcase and Talks: May 6-7, 2025 in Paris'
+  'GOSIM Spotlight Showcase and Talks: May 13, 2025 at RustWeek in Utrecht, the Netherelands'
 ]
 </script>
