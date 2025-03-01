@@ -1,8 +1,6 @@
 <script setup>
-import HeroSection from '@/components/HeroSection.vue'
-import WelcomeSection from "@/components/WelcomeSection.vue";
-import NominateProjectSection from "@/components/NominateProjectSection.vue";
-import FooterSection from "@/components/FooterSection.vue";
+import HeaderMenu from "@/components/HeaderMenu.vue";
+import SiteSelection from "@/components/SiteSelection.vue";
 import { onMounted } from 'vue'
 
 onMounted(() => {
@@ -19,9 +17,7 @@ onMounted(() => {
 
 <template>
   <main>
-    <HeroSection />
-    <WelcomeSection />
-    <NominateProjectSection />
-    <FooterSection />
+    <HeaderMenu />
+    <SiteSelection />
   </main>
 </template>

@@ -11,17 +11,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'index',
-      component: () => import('../views/HomeView.vue')
-    },
-    {
-      path: '/judging',
-      name: 'judging',
-      component: () => import('../views/JudgingView.vue')
-    },
-    {
-      path: '/rules',
-      name: 'rules',
-      component: () => import('../views/RulesView.vue')
+      component: () => import('../views/IndexView.vue')
     },
     {
       path: '/rust',
