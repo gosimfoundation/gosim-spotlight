@@ -8,7 +8,9 @@
         </a>
       </div>
       <div class="mt-8 md:order-1 md:mt-0 flex flex-col md:flex-row items-center gap-2 md:gap-4 text-sm/6 text-gray-600">
-        <p>&copy; 2025 GOSIM. All rights reserved.</p>
+        <p>&copy; 2025
+          <a href='https://gosim.org'>GOSIM Foundation</a>
+          All rights reserved.</p>
         <router-link to="/privacy" class="hover:text-gray-800">Privacy Policy</router-link>
       </div>
     </div>

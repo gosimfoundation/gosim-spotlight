@@ -1,5 +1,5 @@
 <script setup>
-import HeaderMenu from "@/components/HeaderMenu.vue";
+import HeaderLogo from "@/components/HeaderLogo.vue";
 import SiteSelection from "@/components/SiteSelection.vue";
 import { onMounted } from 'vue'
 
@@ -17,7 +17,7 @@ onMounted(() => {
 
 <template>
   <main>
-    <HeaderMenu />
+    <HeaderLogo />
     <SiteSelection />
   </main>
 </template>
